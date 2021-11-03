@@ -6,7 +6,7 @@ task:
   name: "CIRRUS SSH"
   timeout_in: 960m  
   container:
-      image: fr3akyphantom/droid-builder:latest
+      image: ubuntu:latest
       cpu: 8
       memory: 32G
         

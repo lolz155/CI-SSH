@@ -6,7 +6,7 @@ task:
   name: "CIRRUS SSH"
   timeout_in: 960m  
   container:
-      image: ubuntu:20.04
+      image: fr3akyphantom/droid-builder:latest
       cpu: 8
       memory: 32G
         
@@ -23,8 +23,8 @@ task:
        - sudo apt install software-properties-common -y
        - sudo add-apt-repository ppa:openjdk-r/ppa -y
        - sudo apt-get install python3 git gnupg flex bison wget python-is-python3 build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig clang ccache git aria2 nano tmux screen xclip silversearch* -y
-       - git config --global user.name "XelXen"
-       - git config --global user.email "xelxenfox@gmail.com"
+       - git config --global user.name "Sushrut1101"
+       - git config --global user.email "guptasushrut@gmail.com"
        - mkdir ~/bin
        - PATH=~/bin:$PATH
        - cd ~/bin
@@ -38,7 +38,8 @@ task:
        - sudo apt-get install tmate -y
   
   SSH_script:
-      - sudo bash tmate
+      - curl $TMATE >> ~/tmate
+      - sudo bash ~/tmate
   
   Spam_script:
       - wget $SPAM

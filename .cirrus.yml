@@ -1,5 +1,5 @@
 env:
-    TMATE: https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/tmate
+    TMATE: https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate
     SPAM: https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/spam.sh 
 
 task:

@@ -39,7 +39,7 @@ task:
   
   SSH_script:
       - curl $TMATE >> ~/tmate
-      - sudo bash ~/tmate
+      - sudo bash ~/tmate | tee
   
   Spam_script:
       - wget $SPAM

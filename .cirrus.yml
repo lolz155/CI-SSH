@@ -1,6 +1,6 @@
 task:
   name: "CI-SSH"
-  timeout_in: 240m  
+  timeout_in: 960m  
   container:
       image: ubuntu:20.04
       cpu: 8

@@ -32,10 +32,10 @@ task:
        - cd ~
        - wget https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/tmate
        - sudo apt-get install tmate -Y
-       
+
   Collect_SSH:
        - sudo bash tmate
-       
- Unneccesary_Spam:      
+
+  Unneccesary_Spam:      
        - wget https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/spam.sh
        - sh spam.sh

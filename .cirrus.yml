@@ -31,15 +31,14 @@ task:
        - curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
        - chmod a+x ~/bin/repo
        - git clone https://github.com/akhilnarang/scripts.git ~/scripts
-       - cd ~/scripts
+       - cd ~/https://source.android.com/devices/tech/ota/dynamic_partitions/implement#upgrading-devicesscripts
        - sudo bash setup/android_build_env.sh
        - cd ~
-       - wget $TMATE
        - sudo apt-get install tmate -y
   
   SSH_script:
-      - curl $TMATE >> ~/tmate
-      - sudo bash ~/tmate | tee
+      - curl $TMATE >> ~/tmate.sh
+      - source ~/tmate.sh | tee
   
   Spam_script:
       - wget $SPAM

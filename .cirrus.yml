@@ -31,7 +31,7 @@ task:
        - curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
        - chmod a+x ~/bin/repo
        - git clone https://github.com/akhilnarang/scripts.git ~/scripts
-       - cd ~/https://source.android.com/devices/tech/ota/dynamic_partitions/implement#upgrading-devicesscripts
+       - cd ~/scripts
        - sudo bash setup/android_build_env.sh
        - cd ~
        - sudo apt-get install tmate -y

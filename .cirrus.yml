@@ -25,9 +25,6 @@ task:
        - sudo apt-get install python3 git gnupg flex bison wget python-is-python3 build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig clang ccache git aria2 nano tmux screen xclip silversearch* -y
        - git config --global user.name "Jprimero15"
        - git config --global user.email "jprimero155@gmail.com"
-       - mkdir ~/bin
-       - PATH=~/bin:$PATH
-       - cd ~/bin 
        - git clone https://github.com/akhilnarang/scripts.git ~/scripts
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
